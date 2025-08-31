@@ -301,7 +301,7 @@ import "../css/card.css";
 toast.configure();
 
 const Dashboard = () => {
-  const API_BASE = "https://foodorderingbackend-v3b3.onrender.com";
+  const API_BASE = process.env.REACT_APP_API_BASE;
 
   const [itemsdata, setItemsdata] = useState([]);
   const [quantities, setQuantities] = useState({});

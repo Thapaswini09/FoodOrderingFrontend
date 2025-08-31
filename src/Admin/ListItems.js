@@ -7,7 +7,7 @@ const ListItems = () => {
   const [itemsData, setItemsData] = useState([]);
 
   const getAdminItemsData = async () => {
-    const API_BASE = "https://foodorderingbackend-v3b3.onrender.com"; // Render URL
+    const API_BASE = process.env.REACT_APP_API_BASE; // Render URL
 
     const res = await axios.get(`${API_BASE}/api/admin-get-items`, {
       withCredentials: true,

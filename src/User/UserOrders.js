@@ -8,7 +8,7 @@ const UserOrders = () => {
 
   const getUserOrderDeatils = async () => {
     try {
-      const API_BASE = "https://foodorderingbackend-v3b3.onrender.com";
+      const API_BASE = process.env.REACT_APP_API_BASE;
       const res = await axios.get(`${API_BASE}/api/user-get-orders`, {
         withCredentials: true,
         headers: {

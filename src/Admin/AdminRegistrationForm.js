@@ -28,7 +28,7 @@ const AdminRegister = () => {
     if (Object.keys(errordata).length === 0) {
       setErrors({});
       try {
-        const API_BASE = "https://foodorderingbackend-v3b3.onrender.com"; // Render URL
+        const API_BASE = process.env.REACT_APP_API_BASE; // Render URL
 
         const response = await axios.post(
           `${API_BASE}/api/admin-register`,

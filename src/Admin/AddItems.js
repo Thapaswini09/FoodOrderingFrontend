@@ -60,7 +60,7 @@ const AddItems = () => {
 
       try {
         const token = Cookies.get("adminToken");
-        const API_BASE = "https://foodorderingbackend-v3b3.onrender.com";
+        const API_BASE = process.env.REACT_APP_API_BASE;
 
         const res = await axios.post(`${API_BASE}/api/add-items`, formData, {
           headers: {

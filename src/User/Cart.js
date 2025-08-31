@@ -3,7 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const Cart = () => {
-  const API_BASE = "https://foodorderingbackend-v3b3.onrender.com";
+  const API_BASE = process.env.REACT_APP_API_BASE;
   const [itemsdata, setItemsdata] = useState([]);
 
   const getCartsData = async () => {

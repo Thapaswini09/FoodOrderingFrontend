@@ -24,7 +24,7 @@ const LoginForm = () => {
     const errordata = LoginValidation(loginData);
     if (Object.keys(errordata).length === 0) {
       try {
-        const API_BASE = "https://foodorderingbackend-v3b3.onrender.com";
+        const API_BASE = process.env.REACT_APP_API_BASE;
         const res = await axios.post(`${API_BASE}/api/user-login`, loginData);
         const inTenMinutes = new Date(new Date().getTime() + 60 * 60 * 1000); //after 1 hour token will expire
         Cookies.set("userToken", res.data.token, { expires: inTenMinutes });
