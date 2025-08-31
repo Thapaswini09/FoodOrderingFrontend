@@ -298,8 +298,6 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../css/card.css";
 
-toast.configure();
-
 const Dashboard = () => {
   const API_BASE = process.env.REACT_APP_API_BASE;
 
