@@ -1,0 +1,55 @@
+#admin-bg-form {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/people-taking-photos-food_23-2149303525.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.admin-form {
+  background-color: rgb(242, 248, 155);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.admin-form h2 {
+  color: #111211;
+  font-weight: bold;
+}
+
+.admin-form label {
+  color: #040303;
+  font-weight: 600;
+}
+
+.admin-form .form-control {
+  border-radius: 10px;
+}
+
+.admin-form .btn-success,
+.admin-form .btn-danger {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.admin-form #para {
+  color: #131111;
+  margin-top: 15px;
+}
+
+.admin-form a {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 16px;
+}

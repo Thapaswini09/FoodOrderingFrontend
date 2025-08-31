@@ -1,0 +1,52 @@
+#user-reg-form {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('/images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+label{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+h2{
+  color:rgb(71, 224, 71);
+  font-weight: 800;
+}
+.form-container {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+.error-style{
+  color: red;
+}
+.form-gender{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+#para{
+color: white;
+}
+#login-here{
+color: red;
+cursor: pointer;
+font-size: 18px;
+font-weight: 700;
+}
+a{
+  text-decoration: none;
+}
